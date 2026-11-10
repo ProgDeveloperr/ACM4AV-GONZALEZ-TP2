@@ -1,0 +1,236 @@
+.app {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: min(
+    var(--container-max),
+    calc(100% - (var(--container-padding) * 2))
+  );
+
+  margin-inline: auto;
+}
+
+.page {
+  flex: 1;
+
+  padding-block:
+    clamp(56px, 7vw, var(--space-24));
+}
+
+.section {
+  padding-block:
+    clamp(64px, 8vw, 112px);
+}
+
+/* --------------------------------
+   BUTTONS
+-------------------------------- */
+
+.button {
+  min-height: 46px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: var(--space-2);
+
+  padding-inline: 18px;
+
+  border-radius: var(--radius-sm);
+
+  cursor: pointer;
+
+  font-weight: 700;
+  line-height: 1;
+
+  transition:
+    transform var(--transition-fast),
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+
+  opacity: 0.5;
+
+  transform: none;
+}
+
+.button--dark {
+  color: #ffffff;
+  background-color: var(--color-dark);
+}
+
+.button--dark:hover {
+  background-color: #252525;
+}
+
+.button--primary {
+  color: var(--color-text);
+  background-color: #ffffff;
+
+  border: 1px solid var(--color-border);
+}
+
+.button--primary:hover {
+  border-color: var(--color-border-strong);
+
+  box-shadow: var(--shadow-xs);
+}
+
+.button--outline {
+  color: var(--color-text);
+  background-color: transparent;
+
+  border: 1px solid var(--color-border-strong);
+}
+
+.button--outline:hover {
+  background-color: var(--color-surface-soft);
+}
+
+.button--danger {
+  color: #ffffff;
+  background-color: var(--color-danger);
+}
+
+.button--danger:hover {
+  background-color: #921c14;
+}
+
+.button--danger-outline {
+  color: var(--color-danger);
+  background-color: transparent;
+
+  border: 1px solid #e7b7b2;
+}
+
+.button--danger-outline:hover {
+  background-color: var(--color-danger-soft);
+}
+
+.button--small {
+  min-height: 36px;
+
+  padding-inline: 12px;
+
+  font-size: 0.82rem;
+}
+
+/* --------------------------------
+   FORMS
+-------------------------------- */
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-2);
+}
+
+.form-field > span,
+.form-checkbox > span {
+  font-size: 0.84rem;
+  font-weight: 700;
+
+  color: var(--color-text);
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+
+  padding: 13px 14px;
+
+  color: var(--color-text);
+  background-color: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+
+  outline: none;
+
+  transition:
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+.form-field input:hover,
+.form-field select:hover,
+.form-field textarea:hover {
+  border-color: var(--color-border-strong);
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: var(--color-text);
+
+  box-shadow:
+    0 0 0 3px rgba(17, 17, 17, 0.06);
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+
+  gap: var(--space-3);
+
+  cursor: pointer;
+}
+
+.form-checkbox input {
+  width: 18px;
+  height: 18px;
+
+  accent-color: var(--color-dark);
+}
+
+.form-error {
+  padding: 13px 15px;
+
+  color: var(--color-danger);
+  background-color: var(--color-danger-soft);
+
+  border: 1px solid #efc4c0;
+  border-radius: var(--radius-sm);
+}
+
+/* --------------------------------
+   STATUS
+-------------------------------- */
+
+.status-message {
+  padding: var(--space-6);
+
+  background-color: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.status-message--error {
+  color: var(--color-danger);
+}

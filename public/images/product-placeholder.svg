@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#eeeeee"/>
+
+  <g fill="none" stroke="#222222" stroke-width="12">
+    <path d="M400 120 L570 220 L400 320 L230 220 Z"/>
+    <path d="M230 220 L230 390 L400 490 L400 320 Z"/>
+    <path d="M570 220 L570 390 L400 490 L400 320 Z"/>
+  </g>
+
+  <text
+    x="400"
+    y="555"
+    text-anchor="middle"
+    font-family="Arial, sans-serif"
+    font-size="32"
+    fill="#222222"
+  >
+    Producto impreso en 3D
+  </text>
+</svg>

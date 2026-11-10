@@ -1,0 +1,114 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Soporte para Celular",
+      "description": "Soporte de escritorio impreso en 3D para mantener el celular en posición vertical u horizontal.",
+      "price": 8500,
+      "category": "Escritorio",
+      "stock": 10,
+      "image": "/images/products/soporte-celular.avif",
+      "material": "PLA",
+      "customizable": true
+    },
+    {
+      "id": 2,
+      "name": "Soporte para Auriculares",
+      "description": "Base de escritorio impresa en 3D diseñada para almacenar auriculares de forma cómoda y ordenada.",
+      "price": 12500,
+      "category": "Escritorio",
+      "stock": 7,
+      "image": "/images/products/soporte-auriculares.avif",
+      "material": "PLA",
+      "customizable": true
+    },
+    {
+      "id": 3,
+      "name": "Soporte para Joystick",
+      "description": "Soporte compacto para controles de consola, ideal para organizar un escritorio o espacio gaming.",
+      "price": 10500,
+      "category": "Gaming",
+      "stock": 8,
+      "image": "/images/products/soporte-joystick.avif",
+      "material": "PLA",
+      "customizable": true
+    },
+    {
+      "id": 4,
+      "name": "Organizador de Cables",
+      "description": "Organizador modular impreso en 3D para mantener cables USB, cargadores y periféricos ordenados.",
+      "price": 4500,
+      "category": "Organización",
+      "stock": 15,
+      "image": "/images/products/organizador-cables.avif",
+      "material": "PLA",
+      "customizable": false
+    },
+    {
+      "id": 5,
+      "name": "Maceta Geométrica",
+      "description": "Maceta decorativa de diseño geométrico fabricada mediante impresión 3D para plantas pequeñas.",
+      "price": 9000,
+      "category": "Decoración",
+      "stock": 9,
+      "image": "/images/products/maceta-geometrica.avif",
+      "material": "PLA",
+      "customizable": true
+    },
+    {
+      "id": 6,
+      "name": "Llavero Personalizado",
+      "description": "Llavero impreso en 3D personalizable con nombre, iniciales o texto elegido por el cliente.",
+      "price": 3500,
+      "category": "Personalizados",
+      "stock": 20,
+      "image": "/images/products/llavero-personalizado.avif",
+      "material": "PLA",
+      "customizable": true
+    },
+    {
+      "id": 7,
+      "name": "Porta Lápices Modular",
+      "description": "Organizador modular para lápices, lapiceras y pequeños accesorios de escritorio.",
+      "price": 7500,
+      "category": "Organización",
+      "stock": 11,
+      "image": "/images/products/porta-lapices-modular.avif",
+      "material": "PLA",
+      "customizable": true
+    },
+    {
+      "id": 8,
+      "name": "Figura Decorativa Low Poly",
+      "description": "Figura decorativa de estilo low poly fabricada mediante impresión 3D para interiores y escritorios.",
+      "price": 11000,
+      "category": "Decoración",
+      "stock": 6,
+      "image": "/images/products/figura-low-poly.avif",
+      "material": "PLA",
+      "customizable": true
+    },
+    {
+      "id": 9,
+      "name": "Base para Notebook",
+      "description": "Base elevada para notebook diseñada para mejorar la postura de trabajo y favorecer la circulación de aire.",
+      "price": 18000,
+      "category": "Escritorio",
+      "stock": 5,
+      "image": "/images/products/base-notebook.avif",
+      "material": "PETG",
+      "customizable": false
+    },
+    {
+      "id": 10,
+      "name": "Porta Controles Remotos",
+      "description": "Organizador de escritorio para almacenar controles remotos y otros dispositivos pequeños.",
+      "price": 9500,
+      "category": "Organización",
+      "stock": 8,
+      "image": "/images/products/porta-controles.avif",
+      "material": "PLA",
+      "customizable": true
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+.product-form {
+  position: sticky;
+  top: 104px;
+
+  padding: 30px;
+
+  background-color:
+    var(--color-surface);
+
+  border:
+    1px solid var(--color-border);
+
+  border-radius:
+    var(--radius-lg);
+
+  box-shadow:
+    var(--shadow-xs);
+}
+
+/* =================================
+   HEADER
+================================= */
+
+.product-form__header {
+  margin-bottom: 30px;
+
+  padding-bottom: 24px;
+
+  border-bottom:
+    1px solid var(--color-border);
+}
+
+.product-form__header > span {
+  color:
+    var(--color-text-subtle);
+
+  font-size: 0.68rem;
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.product-form__header h2 {
+  margin-top: 7px;
+
+  font-size:
+    clamp(1.7rem, 3vw, 2.2rem);
+
+  line-height: 1;
+
+  letter-spacing: -0.045em;
+}
+
+.product-form__header p {
+  margin-top: 12px;
+
+  color:
+    var(--color-text-soft);
+
+  font-size: 0.88rem;
+
+  line-height: 1.55;
+}
+
+/* =================================
+   FORM GRID
+================================= */
+
+.product-form__grid {
+  margin-bottom: 26px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 20px 16px;
+}
+
+.form-field--full {
+  grid-column: 1 / -1;
+}
+
+.product-form .form-field > span {
+  font-size: 0.74rem;
+
+  letter-spacing: 0.01em;
+}
+
+.product-form
+.form-field input,
+.product-form
+.form-field select,
+.product-form
+.form-field textarea {
+  background-color:
+    #fbfbf9;
+}
+
+.product-form
+.form-field input:focus,
+.product-form
+.form-field select:focus,
+.product-form
+.form-field textarea:focus {
+  background-color:
+    #ffffff;
+}
+
+.product-form
+.form-field textarea {
+  min-height: 132px;
+}
+
+/* =================================
+   CHECKBOX
+================================= */
+
+.product-form .form-checkbox {
+  margin-top: 2px;
+
+  padding:
+    12px 0 4px;
+}
+
+.product-form .form-checkbox > span {
+  color:
+    var(--color-text-soft);
+
+  font-size: 0.78rem;
+}
+
+/* =================================
+   ACTIONS
+================================= */
+
+.product-form__actions {
+  margin-top: 26px;
+  padding-top: 22px;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  border-top:
+    1px solid var(--color-border);
+}
+
+.product-form__actions
+.button--dark {
+  min-width: 140px;
+}
+
+/* =================================
+   EDIT MODE
+================================= */
+
+.product-form:has(
+  .product-form__header
+  > span
+) {
+  transition:
+    border-color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 1060px) {
+  .product-form {
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-form {
+    padding: 22px;
+  }
+
+  .product-form__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-field--full {
+    grid-column: auto;
+  }
+
+  .product-form__actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .product-form__actions
+  .button {
+    width: 100%;
+  }
+}
